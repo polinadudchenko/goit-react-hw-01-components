@@ -1,33 +1,39 @@
 import PropTypes from 'prop-types'
+import s from './Profile.module.css'
 
 export default function User({ name, tag, location, avatar, stats }) {
-    return <div className="profile">
-            <div className="description">
+    return <div className={s.profile}>
+            <div className={s.description}>
                 <img
                 src={avatar}
                 alt={name}
-                className="avatar"
+                className={s.avatar}
                 />
-                <p className="name">{name}</p>
-                <p className="tag">@{tag}</p>
-                <p className="location">{location}</p>
+                <p className={s.name}>{name}</p>
+                <p className={s.tag}>@{tag}</p>
+                <p className={s.location}>{location}</p>
             </div>
 
-            <ul className="stats">
-                <li>
-                <span className="label">Followers</span>
-                <span className="quantity">{stats.followers}</span>
+            <ul className={s.stats}>
+                <li className={s.stats__item}>
+                    <span className={s.label}>Followers</span>
+                    <span className={s.quantity}>{stats.followers}</span>
                 </li>
-                <li>
-                <span className="label">Views</span>
-                <span className="quantity">{stats.views}</span>
+                <li className={s.stats__item}>
+                    <span className={s.label}>Views</span>
+                    <span className={s.quantity}>{stats.views}</span>
                 </li>
-                <li>
-                <span className="label">Likes</span>
-                <span className="quantity">{stats.quantity}</span>
+                <li className={s.stats__item}>
+                    <span className={s.label}>Likes</span>
+                    <span className={s.quantity}>{stats.likes}</span>
                 </li>
             </ul>
             </div>
+}
+
+User.defaultProps = {
+    name: 'Unknown',
+    avatar: 'https://cdn-icons-png.flaticon.com/512/2922/2922506.png'
 }
 
 User.propTypes = {
@@ -36,9 +42,4 @@ User.propTypes = {
     location: PropTypes.string,
     avatar: PropTypes.string,
     stats: PropTypes.objectOf(PropTypes.number),
-    /* stats: PropTypes.shape({
-    followers: PropTypes.string,
-        views: PropTypes.number.isRequired,
-    likes: PropTypes.number.isRequired 
-  })*/
 }
