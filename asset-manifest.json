@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/goit-markup-hw-01/static/css/main.49f2d21f.chunk.css",
+    "main.js": "/goit-markup-hw-01/static/js/main.5eed84e9.chunk.js",
+    "main.js.map": "/goit-markup-hw-01/static/js/main.5eed84e9.chunk.js.map",
+    "runtime-main.js": "/goit-markup-hw-01/static/js/runtime-main.a09beaa8.js",
+    "runtime-main.js.map": "/goit-markup-hw-01/static/js/runtime-main.a09beaa8.js.map",
+    "static/js/2.62c5d486.chunk.js": "/goit-markup-hw-01/static/js/2.62c5d486.chunk.js",
+    "static/js/2.62c5d486.chunk.js.map": "/goit-markup-hw-01/static/js/2.62c5d486.chunk.js.map",
+    "index.html": "/goit-markup-hw-01/index.html",
+    "static/css/main.49f2d21f.chunk.css.map": "/goit-markup-hw-01/static/css/main.49f2d21f.chunk.css.map",
+    "static/js/2.62c5d486.chunk.js.LICENSE.txt": "/goit-markup-hw-01/static/js/2.62c5d486.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a09beaa8.js",
+    "static/js/2.62c5d486.chunk.js",
+    "static/css/main.49f2d21f.chunk.css",
+    "static/js/main.5eed84e9.chunk.js"
+  ]
+}
