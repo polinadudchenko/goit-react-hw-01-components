@@ -2,7 +2,7 @@
   "name": "goit-react-hw-01-components",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://polinadudchenko.github.io/goit-markup-hw-01",
+  "homepage": "https://polinadudchenko.github.io/goit-react-hw-01-components",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
