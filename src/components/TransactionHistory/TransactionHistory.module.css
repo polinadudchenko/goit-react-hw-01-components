@@ -1,0 +1,21 @@
+.transaction-history {
+  width: 400px;
+  margin: 40px auto 0px;
+}
+
+.transaction-title {
+  background-color: #eaeaea;
+  height: 35px;
+}
+
+.transaction-body__line:nth-child(2n) {
+  background-color: #84c2f5;
+}
+
+.transaction-body__line:nth-child(2n + 1) {
+  background-color: #2697f3;
+}
+
+.transaction-body__column {
+  padding: 5px;
+}
