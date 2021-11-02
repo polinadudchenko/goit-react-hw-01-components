@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types'
 import s from './Statistics.module.css'
+import getBgColor from '../../helpers/randomRGB'
 
 export default function Statistics({ title, stats }) {
     return <section className={s.statistics}>
@@ -16,6 +17,9 @@ export default function Statistics({ title, stats }) {
         </section>
 }
 
+Statistics.defaultProps = {
+    title: '',
+}
 
 Statistics.propTypes = {
     title: PropTypes.string,
@@ -26,6 +30,3 @@ Statistics.propTypes = {
     }))
 }
 
-function getBgColor() {
-  return `rgb(${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)})`;
-}
